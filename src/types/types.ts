@@ -78,7 +78,7 @@ export interface Collectable {
 
 export interface Achievement {
     id: string;
-    name: string;
+    title: string;
     description: string;
     requirement: {
         type: CollectableType;
@@ -94,4 +94,13 @@ export interface UserState {
     openedBoxes: number;
     completedTasks: number;
     achievements: Achievement[];
+}
+
+export interface AppState {
+    user: UserState;
+    tasks: Task[];
+    boxes: Box[];
+    collectables: Collectable[];
+    achievements: Achievement[];
+    currentTaskIndex: number;
 }
