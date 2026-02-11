@@ -51,6 +51,8 @@ export interface Task {
     correctOptionId?: string;
     content?: string;
     codeExample?: string;
+    selectedAnswerId?: string;
+    isAnswerCorrect?: boolean;
 }
 
 export interface Box {
