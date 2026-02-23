@@ -203,4 +203,4 @@ export const {
   sortByCompletion
 } = tasksSlice.actions;
 
-export default tasksSlice.reducer;
+export const taskReducer = tasksSlice.reducer;
